@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--platinum);
+    padding: 0.55vw 1.74vw;
+    width: 100%;
+    
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
