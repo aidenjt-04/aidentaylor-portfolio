@@ -1,11 +1,7 @@
 footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: var(--platinum);
-    padding: 0.55vw 1.74vw;
     width: 100%;
-    
     left: 0;
     bottom: 0;
     z-index: 1000;
@@ -17,6 +13,40 @@ footer {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding: 0 7rem;
+}
+
+.socials-container svg {
+    margin-right: 1rem;
+}
+
+.logo-footer {
+    height: 10rem;
+    width: 10rem;
+}
+
+.linkedin:hover {
+    color: #0a66c2;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.github:hover {
+    color: #2dba4e;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.instagram:hover {
+    color: #8a49a1;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.footer-titles {
+    font-size: 1.65rem;
+}
+
+.socials-container h1 {
+    margin-bottom: 0.3rem;
 }
