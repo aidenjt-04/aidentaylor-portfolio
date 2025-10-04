@@ -1,0 +1,54 @@
+.future-window {
+    background-color: var(--eerie-black);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 1150px;
+    height: 200px;
+    margin: 0 auto;
+    font-family: 'Courier New', monospace;
+    font-weight: 800;
+    overflow: hidden;
+    border: 1px solid var(--eerie-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-text {
+    padding: 16px;
+    font-size: 1.8rem;
+    line-height: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading-word {
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 0;
+    animation: future-typing 2s steps(7, end) forwards;
+    color: #20C20E;
+}
+
+.loading-dots::after {
+    content: "";
+    animation: dots 3s steps(3, end) infinite;
+    margin-left: 4px;
+    color: #20C20E;
+}
+
+@keyframes future-typing {
+    from { width: 0; }
+    to { width: 7ch; }
+}
+
+@keyframes dots {
+    0%   { content: ""; }
+    33%  { content: "."; }
+    66%  { content: ".."; }
+    100% { content: "..."; }
+}
