@@ -1,0 +1,48 @@
+.vscode-window {
+    background-color: var(--eerie-black);
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+    font-family: 'Courier New', monospace;
+    font-weight: 800;
+    overflow: hidden;
+    border: 1px solid var(--eerie-black);
+}
+
+.vscode-top-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--onyx);
+    gap: 6px;
+}
+
+.circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background-color: #f56565; }
+.yellow { background-color: #ecc94b; }
+.green { background-color: #48bb78; }
+
+.vscode-code-area {
+    padding: 16px;
+    font-size: 0.9rem;
+    line-height: 2;
+}
+
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 1.5s steps(40, end) forwards
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
