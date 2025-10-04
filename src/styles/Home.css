@@ -101,7 +101,7 @@
 }
 
 .btn {
-    background-color: var(--eerie-black); /* your dark accent */
+    background-color: var(--eerie-black);
     color: var(--seasalt);
     font-size: 1.2rem;
     font-weight: bold;

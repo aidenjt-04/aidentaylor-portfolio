@@ -1,0 +1,94 @@
+.contact-main-content {
+    display: flex;
+    position: relative;
+    padding: 2rem 5rem;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.spam {
+    display: none !important;
+}
+
+.contact-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.info {
+    flex: 1;
+}
+
+.user-inputs {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--outer-space);
+    color: var(--seasalt);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    margin-top: 2rem;
+}
+
+.user-inputs p {
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.user-inputs input[type="text"],
+.user-inputs textarea,
+.user-inputs input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.user-inputs input[type="text"]:focus,
+.user-inputs textarea:focus,
+.user-inputs input[type="email"]:focus {
+    outline: none;
+    border-color: var(--antiflash-white);
+    box-shadow: 0 0 10px var(--antiflash-white);
+}
+
+.submit-button {
+    background-color: var(--eerie-black);
+    color: var(--seasalt);
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    letter-spacing: 0.5px;
+    margin-top: 1rem;
+    font-family: 'Crimson Text', serif;
+}
+
+.submit-button:hover {
+    background-color: var(--french-gray-2);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+}
+
+.submit-button.active {
+    transform: translateY(0px);
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+.user-inputs textarea {
+    resize: none;
+    
+}
