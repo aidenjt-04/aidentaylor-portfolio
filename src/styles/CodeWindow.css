@@ -31,7 +31,7 @@
 
 .vscode-code-area {
     padding: 1rem;
-    font-size: 1.08rem;
+    font-size: 0.82rem;
     line-height: 2;
     overflow-x: auto;
     word-break: break-word;
@@ -47,4 +47,16 @@
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
+}
+
+@media (min-width: 1440px) {
+    .vscode-code-area {
+        font-size:0.58rem
+    }
+}
+
+@media (min-width: 2560px) {
+    .vscode-code-area {
+        font-size:1.09rem
+    }
 }

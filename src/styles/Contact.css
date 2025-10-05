@@ -1,12 +1,12 @@
 .contact-main-content {
     display: flex;
     position: relative;
-    padding: 2rem;
+    padding: 9rem;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    gap: 0;
 }
 
 .spam {
@@ -94,19 +94,24 @@
 
 .user-inputs textarea {
     resize: none;
-    
 }
 
-@media(max-width: 768px) {
+@media (min-width: 768px) {
     .contact-main-content {
-        padding-top: 10rem;
-        gap: 1.3rem;
+        padding-top: 14rem;
     }
 }
 
-@media(max-width: 1440px) {
+@media (min-width: 1024px) {
     .contact-main-content {
-        padding-top: 7rem;
+        padding: 12rem 3rem;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact-main-content {
+        padding-top: 10rem;
         gap: 1.3rem;
     }
 }

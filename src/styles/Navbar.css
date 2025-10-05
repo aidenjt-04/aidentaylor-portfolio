@@ -1,26 +1,26 @@
 nav {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     background-color: var(--platinum);
-    padding: 1rem 2rem;
+    padding: 1rem;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1500;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    gap: 1rem;
 }
 
 .logo {
-    height: 4rem;
-    width: 4rem;
+    height: 3rem;
+    width: 3rem;
     transition: 0.3s ease-in-out;
 }
 
 nav .logo {
     color: var(--eerie-black);
-    transition: 0.3s ease-in-out;
 }
 
 nav .logo:hover {
@@ -30,10 +30,11 @@ nav .logo:hover {
 
 .navbar-links {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-left: auto;
-    gap: 3.5rem;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-left: 0;
 }
 
 .navbar-links li {
@@ -44,7 +45,7 @@ nav .logo:hover {
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: var(--eerie-black);
     transition: 0.3s ease-in-out;
@@ -64,33 +65,35 @@ nav .logo:hover {
     left: 0;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
+    nav {
+        align-items: center;
+        padding: 1rem 2rem;
+        gap: 1rem; 
+    }
+
+    .navbar-links {
+        flex-direction: row;
+        width: auto;
+        align-items: center; 
+        gap: 2.5rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
     .navbar-links li a {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width: 768px) {
-    nav {
-        align-items: flex-start;
-        padding: 1rem;
-        gap: 1rem;
-    }
-
-    .navbar-links {
-        flex-direction: column;
-        width: 100%;
-        align-items: flex-end;
-        gap: 1rem;
-    }
-}
-
-@media (max-width: 480px) {
+@media (min-width: 1440px) {
     .navbar-links li a {
-        font-size: 1.2rem;
+        font-size: 1.7rem;
     }
 
     .logo {
-        height: 3rem;
+        height: 4rem;
+        width: 4rem;
     }
 }
