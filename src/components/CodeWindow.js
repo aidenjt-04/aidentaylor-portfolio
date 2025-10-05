@@ -6,7 +6,7 @@ const lines = [
     { text: "import { React, Node.js, Express.js, Python Django, Python Flask } from './Frameworks';", color: "#61afef", delay: 3.6 },
     { text: "import { MySQL, PostgreSQL, MongoDB } from './Databases';", color: "#61afef", delay: 5.4 },
     { text: "import { Git, Github, Google Suite, Jira, Figma, Wireshark, Ubuntu } from './Tools';", color: "#61afef", delay: 7.2 },
-    { text: "import { Intermediate Spanish, Problem-Solving, Creativity, Strong Work Ethic, Leadership, Adaptability } from './SoftSkills';", color: "#61afef", delay: 9 },
+    { text: "import { Intermediate Spanish, Problem-Solving, Creativity, Leadership, Adaptability } from './SoftSkills';", color: "#61afef", delay: 9 },
     { text: "export default MySkills = createStack('Everything you're looking for');", color: "#e5c07b", delay: 10.8 },
 ];
 

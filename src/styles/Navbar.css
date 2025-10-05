@@ -9,11 +9,13 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1500;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .logo {
     height: 4rem;
     width: 4rem;
+    transition: 0.3s ease-in-out;
 }
 
 nav .logo {
@@ -31,11 +33,11 @@ nav .logo:hover {
     align-items: center;
     justify-content: flex-end;
     margin-left: auto;
+    gap: 3.5rem;
 }
 
 .navbar-links li {
     list-style: none;
-    padding: 0 1.20vw;
     position: relative;
 }
 
@@ -49,15 +51,46 @@ nav .logo:hover {
 }
 
 .navbar-links li a:hover {
-    color: #0F0E47;
+    color: var(--eerie-black);
 }
 
 .navbar-links li a:hover::after {
     content: "";
     width: 30%;
-    height: 0.14vw;
-    background: #0F0E47;
+    height: 2.5px;
+    background: var(--eerie-black);
     position: absolute;
-    bottom: -0.28vw;
-    left: 1.39vw;
+    bottom: -4px;
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+    .navbar-links li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        align-items: flex-start;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-links li a {
+        font-size: 1.2rem;
+    }
+
+    .logo {
+        height: 3rem;
+    }
 }

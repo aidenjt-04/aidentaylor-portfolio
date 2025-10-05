@@ -1,10 +1,12 @@
 .contact-main-content {
     display: flex;
     position: relative;
-    padding: 2rem 5rem;
-    height: 100vh;
+    padding: 2rem;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .spam {
@@ -13,12 +15,13 @@
 
 .contact-info {
     flex: 1;
-    padding: 20px;
+    padding: 1.25rem;
+    min-width: 18.75rem;
 }
 
 .page-title {
     font-size: 3rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .info {
@@ -27,7 +30,8 @@
 
 .user-inputs {
     flex: 1;
-    padding: 30px;
+    padding: 2rem;
+    min-width: 18rem;
     background-color: var(--outer-space);
     color: var(--seasalt);
     border-radius: 12px;
@@ -36,7 +40,7 @@
 }
 
 .user-inputs p {
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
     font-size: 1.3rem;
     font-weight: bold;
 }
@@ -45,8 +49,8 @@
 .user-inputs textarea,
 .user-inputs input[type="email"] {
     width: 100%;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 1rem;
+    margin-top: 0.6rem;
     border: 1px solid white;
     border-radius: 12px;
     font-size: 1.1rem;
@@ -72,7 +76,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03rem;
     margin-top: 1rem;
     font-family: 'Crimson Text', serif;
 }
@@ -91,4 +95,18 @@
 .user-inputs textarea {
     resize: none;
     
+}
+
+@media(max-width: 768px) {
+    .contact-main-content {
+        padding-top: 10rem;
+        gap: 1.3rem;
+    }
+}
+
+@media(max-width: 1440px) {
+    .contact-main-content {
+        padding-top: 7rem;
+        gap: 1.3rem;
+    }
 }

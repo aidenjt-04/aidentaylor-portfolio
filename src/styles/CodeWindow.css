@@ -30,9 +30,11 @@
 .green { background-color: #48bb78; }
 
 .vscode-code-area {
-    padding: 16px;
-    font-size: 0.9rem;
+    padding: 1rem;
+    font-size: 1.08rem;
     line-height: 2;
+    overflow-x: auto;
+    word-break: break-word;
 }
 
 .typing {

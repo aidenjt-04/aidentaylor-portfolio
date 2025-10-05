@@ -96,23 +96,30 @@ function Experience() {
                     <div className="experience-right">
                         <div className="resume-container">
                             <h1 >Resume</h1>
-                            <a
+                            <div className="resume-wrapper">
+                                <a
                                 href="https://drive.google.com/file/d/1dLf1gFgdsqfYe7JLYV9ng4nhgSOgJ4wo/view?usp=sharing"
                                 target="_blank"
                                 rel="noreferrer"
-                            >
-                                <object
-                                data="https://drive.google.com/file/d/1dLf1gFgdsqfYe7JLYV9ng4nhgSOgJ4wo/preview"
-                                type="application/pdf"
-                                className="resume-object"
                                 >
-                                <p>Your browser does not support PDFs. <br /> 
-                                    <a href="https://drive.google.com/file/d/1dLf1gFgdsqfYe7JLYV9ng4nhgSOgJ4wo/view" target="_blank" rel="noreferrer">
-                                    Click here to view the resume
+                                <object
+                                    data="https://drive.google.com/file/d/1dLf1gFgdsqfYe7JLYV9ng4nhgSOgJ4wo/preview"
+                                    type="application/pdf"
+                                    className="resume-object"
+                                >
+                                    <p>
+                                    Your browser does not support PDFs. <br />
+                                    <a
+                                        href="https://drive.google.com/file/d/1dLf1gFgdsqfYe7JLYV9ng4nhgSOgJ4wo/view"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        Click here to view the resume
                                     </a>
-                                </p>
+                                    </p>
                                 </object>
-                            </a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

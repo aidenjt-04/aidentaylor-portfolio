@@ -3,15 +3,15 @@
     flex-direction: column;
     position: relative;
     
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
     gap: 2rem;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
 }
 
 .experience-row {
     display: grid;
-    grid-template-columns: 650px 650px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
@@ -22,7 +22,8 @@
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.25);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 650px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .experience-card:hover {
@@ -64,34 +65,53 @@
 
 .experience-layout {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    gap: 2rem;
 }
 
 .experience-left {
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    min-width: 0;
 }
 
 
 .experience-right {
     flex: 1;
     border-radius: 12px;
-    height: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
 }
 
 .resume-object {
     width: 100%;
-    height: 515px;
-    border: 1px solid var(--eerie-black);
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+    height: 100%;
+    border: none;
+    display: block;
+    min-height: 400px;
+    object-fit: cover;
+}
+
+.resume-container {
+    width: 100%;
 }
 
 .resume-container h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.resume-wrapper {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 .experience-card a {
@@ -101,3 +121,72 @@
 .experience-title {
     margin-bottom: 0.5rem;
 }
+
+@media (max-width: 1024px) {
+    .experience-main-content {
+        padding: 2rem;
+    }
+    .experience-layout {
+        flex-direction: column;
+    }
+    .experience-left, .experience-right {
+        width: 100%;
+        min-height: unset;
+    }
+    .experience-right {
+        order: 2;
+        height: auto;
+        margin-top: 2rem;
+    }
+    .resume-object {
+        height: 400px;
+        min-height: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .experience-main-content {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    .resume-object {
+        height: 350px;
+    }
+
+    .experience-date {
+        font-size: 0.7rem;
+    }
+
+    .tag {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .experience-main-content {
+        padding-top: 12rem;
+    }
+}
+
+@media(max-width: 1440px) {
+    .experience-main-content {
+        padding-top: 8rem;
+    }
+
+    .resume-object {
+        height: 55rem;
+    }
+}
+
+@media(max-width: 2560px) {
+    .resume-object {
+        height: 50rem;
+    }
+}
+

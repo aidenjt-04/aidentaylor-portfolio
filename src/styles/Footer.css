@@ -5,6 +5,7 @@ footer {
     left: 0;
     bottom: 0;
     z-index: 1000;
+    padding: 0rem 5rem;
 }
 
 .footer-container {
@@ -13,16 +14,23 @@ footer {
     align-items: center;
     width: 100%;
     justify-content: space-between;
-    padding: 0 7rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2rem;
 }
 
 .socials-container svg {
     margin-right: 1rem;
+    width: clamp(30px, 3vw, 40px);
+    height: clamp(30px, 3vw, 40px);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 .logo-footer {
-    height: 10rem;
-    width: 10rem;
+    height: clamp(10rem, 8vw, 12rem);
+    width: clamp(10rem, 8vw, 12rem);
+    padding: 0;
 }
 
 .linkedin:hover {
@@ -44,9 +52,42 @@ footer {
 }
 
 .footer-titles {
-    font-size: 1.65rem;
+    font-size: clamp(1.2rem, 2vw, 1.65rem);
+    margin-bottom: 0.5rem;
 }
 
-.socials-container h1 {
+.socials-container h1,
+.website-info-container h1 {
     margin-bottom: 0.3rem;
+}
+
+@media (max-width: 1024px) {
+    .footer-container {
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .logo-footer {
+        height: 8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* stack logo, socials, info */
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .socials-container,
+    .website-info-container {
+        align-items: center;
+    }
+
+    .socials-container svg {
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
 }

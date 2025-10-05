@@ -6,20 +6,24 @@
     flex-direction: column;
     position: relative;
     margin-top: 0;
+    padding: 0 2rem;
 }
 
 .home-main-content h1 {
-    font-size: 10rem;
+    font-size: clamp(3rem, 10vw, 10rem);
+    text-align: center;
 }
 
 .home-main-content h2 {
-    font-size: 6rem;
+    font-size: clamp(2rem, 6vw, 6rem);
+    text-align: center;
 }
 
 .divider {
     border-bottom: 3px solid var(--eerie-black);
-    margin: 20px 0;
+    margin: 1.5rem 0;
     width: 80%;
+    max-width: 1500px;
 }
 
 .arrow-container {
@@ -36,11 +40,11 @@
     animation: bouncing 1s infinite ease-in-out;
     bottom: 0;
     display: block;
-    height: 50px;
+    height: 3rem;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -1.5rem;
     position: absolute;
-    width: 50px;
+    width: 3rem;
     font-weight: bolder;
     font-size: 2rem;
 }
@@ -50,38 +54,43 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 2rem;
-    width: 1500px;
+    width: 100%;
+    max-width: 1500px;
     margin: 4rem auto;
-    padding: 4rem;
-    align-items: flex-start;
+    padding: 2rem;
+    flex-wrap: wrap;
 }
 
 .about-me-text p {
     min-height: 180px;
-    width: 500px;
-    font-size: 1.1rem;
+    width: 100%;
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);;
     line-height: 2.5;
 }
 
 .about-me-text {
     flex: 2;
+    min-width: 18rem;
 }
 
 .about-me-portrait {
-    width: 300px; 
-    height: 450px; 
+    flex: 1;
+    max-width: 300px; 
+    min-width: 150px;
+    width: 100%;
+    max-height: 450px; 
+    height: auto;
     overflow: hidden; 
     display: flex; 
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    flex: 1;
-    margin-right: 4rem;
+    border-radius: 12px;
 }
 
 .photo {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover; 
     object-position: 50% 80%;
     border-radius: 12px;
@@ -91,7 +100,7 @@
 }
 
 .about-me-text h1 {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 3vw, 2rem);
     margin-bottom: 1rem;
 }
 
@@ -103,7 +112,7 @@
 .btn {
     background-color: var(--eerie-black);
     color: var(--seasalt);
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: bold;
     padding: 0.75rem 2rem;
     border: none;
@@ -125,4 +134,115 @@
 .btn:active {
     transform: translateY(0px);
     box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 1024px) {
+    .about-me-container {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .photo {
+        max-width: 250px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .home-main-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-main-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-me-container {
+        flex-direction: column; /* stack text and portrait */
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .about-me-text p {
+        font-size: 1rem;
+    }
+
+    .photo {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .home-main-content {
+        padding-top: 4rem;
+    }
+
+    .photo {
+        max-width: 100%;
+        height: 350px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:375px) {
+    .home-main-content {
+        padding-top: 4rem;
+    }
+
+    .photo {
+        max-width: 100%;
+        height: 350px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:425px) {
+    .home-main-content {
+        padding-top: 4rem;
+    }
+
+    .photo {
+        max-width: 100%;
+        height: 350px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:768px) {
+    .photo {
+        max-width: 100%;
+        height: 280px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:1440px) {
+    .photo {
+        max-width: 100%;
+        height: 300px;
+        margin-right: 0;
+    }
+}
+
+@media (max-width:2560px) {
+    .photo {
+        max-width: 100%;
+        height: 300px;
+        margin-right: 0;
+    }
+
+    .about-me-container {
+        gap: 10rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+    .about-me-text p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
 }
