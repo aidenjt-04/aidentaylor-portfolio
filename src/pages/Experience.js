@@ -54,7 +54,7 @@ function Experience() {
                                     rel="noopener noreferrer"
                                     aria-label="Link to GitHub repo for portfolio project"
                                 >
-                                    <h2 className="experience-title">aidentaylor.com (v1)       <LuArrowUpRight /></h2>
+                                    <h2 className="experience-title">Portfolio (v1)       <LuArrowUpRight /></h2>
                                 </a>
                                 <p className="experience-bio">
                                     Designed and built this portfolio to showcase my projects and skills, creating an interactive, responsive, and accessible experience that reflects my work as a full-stack developer.

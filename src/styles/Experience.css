@@ -115,6 +115,15 @@
 
 .experience-card a {
     text-decoration: none;
+    color: var(--seasalt);
+}
+.experience-card a:hover {
+    text-decoration: none;
+    color: var(--seasalt);
+}
+.experience-card a:visted {
+    text-decoration: none;
+    color: var(--seasalt);
 }
 
 .experience-title {
