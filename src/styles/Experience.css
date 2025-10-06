@@ -45,7 +45,7 @@
     align-items: center;
     background: var(--platinum);
     color: var(--outer-space);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     font-weight: 500;
     padding: 0.2rem 0.5rem;
     border-radius: 9999px;
@@ -54,7 +54,7 @@
 .experience-date {
     grid-column: span 2;
     margin: 0.25rem 0 0.5rem;
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -131,6 +131,18 @@
     .experience-main-content {
         padding-top: 1.5rem;
     }
+
+    .tag {
+        font-size: 0.8rem;
+    }
+
+    .experience-date {
+        font-size: 0.85rem;
+    }
+
+    .experience-bio {
+        font-size: 1.1rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -141,6 +153,18 @@
     .experience-left, .experience-right {
         width: 100%;
         min-height: unset;
+    }
+
+    .tag {
+        font-size: 0.85rem;
+    }
+
+    .experience-date {
+        font-size: 0.9rem;
+    }
+
+    .experience-bio {
+        font-size: 1.1rem;
     }
 }
 
@@ -159,17 +183,33 @@
     }
 
     .resume-object {
-        height: 47.5rem;
+        height: 54rem;
     }
 }
 
 @media (min-width: 2560px) {
     .experience-main-content {
-        margin-top: 0;
+        margin-top: 5rem;
     }
 
     .resume-object {
         flex: 1;
-        height: 34rem;
+        height: 45rem;
+    }
+
+    .tag {
+        font-size: 1rem;
+    }
+
+    .experience-date {
+        font-size: 1.1rem;
+    }
+
+    .experience-bio {
+        font-size: 1.3rem;
+    }
+
+    .experience-title {
+        font-size: 1.8rem;
     }
 }

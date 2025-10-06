@@ -104,7 +104,7 @@
 
 @media (min-width: 1024px) {
     .contact-main-content {
-        padding: 12rem 3rem;
+        padding: 6rem 1.5rem;
         gap: 2rem;
     }
 }
@@ -112,6 +112,5 @@
 @media (min-width: 1440px) {
     .contact-main-content {
         padding-top: 10rem;
-        gap: 1.3rem;
     }
 }

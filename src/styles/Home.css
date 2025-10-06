@@ -23,7 +23,7 @@
     border-bottom: 3px solid var(--eerie-black);
     margin: 1.5rem 0;
     width: 80%;
-    max-width: 1500px;
+    max-width: 1100px;
 }
 
 .arrow-container {
@@ -72,10 +72,10 @@
 
 .about-me-text p {
     width: 100%;
-    min-height: 180px;
+    min-height: 120px;
     font-size: 1rem; 
-    line-height: 2.5;
-    margin-bottom: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .about-me-portrait {
@@ -118,7 +118,7 @@
     transition: all 0.3s ease;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
     letter-spacing: 0.5px;
-    margin-top: 1rem;
+    margin: 1rem 0;
     font-family: 'Crimson Text', serif;
 }
 
@@ -133,13 +133,37 @@
     box-shadow: 0px 3px 8px rgba(0,0,0,0.2);
 }
 
+@media(min-width: 768px) {
+    .about-me-text p {
+        min-height: 80px;
+    }
+
+    .home-main-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-main-content h2 {
+        font-size: 3.5rem;
+    }
+    
+}
+
 @media (min-width: 1024px) {
     .about-me-container {
         flex-direction: row;
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 1.5rem;
+        justify-content: center;
+        align-items: center;
     }
 
+    .home-main-content h1 {
+        font-size: 6rem;
+    }
+
+    .home-main-content h2 {
+        font-size: 4.5rem;
+    }
 }
 
 @media (min-width: 1440px) {
@@ -148,7 +172,32 @@
     }
 
     .about-me-text p {
+        font-size: 1.2rem;
+    }
+
+    .home-main-content h1 {
+        font-size: 7rem;
+    }
+
+    .home-main-content h2 {
+        font-size: 5.5rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .about-me-container {
+        padding: 0 5rem;
+    }
+
+    .about-me-text p {
         font-size: 1.5rem;
     }
 
+    .home-main-content h1 {
+        font-size: 8rem;
+    }
+
+    .home-main-content h2 {
+        font-size: 6.5rem;
+    }
 }

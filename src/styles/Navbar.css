@@ -79,6 +79,14 @@ nav .logo:hover {
         gap: 2.5rem;
     }
 
+    .navbar-links li a {
+        font-size: 1.4rem;
+    }
+
+    .logo {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -95,5 +103,16 @@ nav .logo:hover {
     .logo {
         height: 4rem;
         width: 4rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .navbar-links li a {
+        font-size: 2rem;
+    }
+
+    .logo {
+        height: 5rem;
+        width: 5rem;
     }
 }

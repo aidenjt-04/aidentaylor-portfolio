@@ -43,10 +43,13 @@
     display: none;
 }
 
-/* Tablet → 768px */
 @media (min-width: 768px) {
     .about-main-content {
-        padding-top: 4rem;
+        padding-top: 1rem;
+    }
+
+    .about-main-content h1 {
+        padding-bottom: 1rem;
     }
 
     .about-text {
@@ -114,5 +117,13 @@
 
     .about-text {
         font-size: 1.5rem;
+    }
+
+    .about-main-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .about-main-content {
+        margin-top: 10rem;
     }
 }
