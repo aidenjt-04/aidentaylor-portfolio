@@ -29,12 +29,12 @@ footer {
     transition: 0.3s ease-in-out;
 }
 
-.social-container a {
+.socials-container a {
     color: var(--eerie-black);
     text-decoration: none;
 }
 
-.social-container a:visted {
+.socials-container a:visited {
     color: var(--eerie-black);
     text-decoration: none;
 }
