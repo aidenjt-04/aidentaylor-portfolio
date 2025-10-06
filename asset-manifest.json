@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/aidentaylor-portfolio/static/css/main.407653d1.css",
+    "main.js": "/aidentaylor-portfolio/static/js/main.674488ea.js",
+    "static/media/AidenTaylorHeadshot.jpg": "/aidentaylor-portfolio/static/media/AidenTaylorHeadshot.3438a54512f0258ee3da.jpg",
+    "static/media/AT-logo-long.svg": "/aidentaylor-portfolio/static/media/AT-logo-long.5d78109197f4a78f7a85ad6296416601.svg",
+    "static/media/AT-Logo.svg": "/aidentaylor-portfolio/static/media/AT-Logo.72d80a15182b2bc1ec2368b0b33901bd.svg",
+    "index.html": "/aidentaylor-portfolio/index.html",
+    "main.407653d1.css.map": "/aidentaylor-portfolio/static/css/main.407653d1.css.map",
+    "main.674488ea.js.map": "/aidentaylor-portfolio/static/js/main.674488ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.407653d1.css",
+    "static/js/main.674488ea.js"
+  ]
+}
