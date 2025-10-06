@@ -10,10 +10,10 @@ function Experience() {
             <Navbar />
             <main className="experience-main-content">
                 <div className="experience-layout">
-                    <div className="experience-left">
+                    <section className="experience-left">
                         <h1>Work Experience</h1>
                         <div className="experience-row">
-                            <div className="experience-card">
+                            <article className="experience-card">
                                 <header className="experience-date">May 2025 - Current</header>
                                 <h2 className="experience-title">Full Stack Developer · BoundaryRSS</h2>
                                 <p className="experience-bio">
@@ -27,8 +27,8 @@ function Experience() {
                                     <li><span className="tag">Notion</span></li>
                                     <li><span className="tag">Slack</span></li>
                                 </ul>
-                            </div>
-                            <div className="experience-card">
+                            </article>
+                            <article className="experience-card">
                                 <header className="experience-date">September 2024 - Current</header>
                                 <h2 className="experience-title">Instructor · Brains and Motion Education</h2>
                                 <p className="experience-bio">
@@ -42,11 +42,11 @@ function Experience() {
                                     <li><span className="tag">Communications</span></li>
                                     <li><span className="tag">Problem-Solving</span></li>
                                 </ul>
-                            </div>
+                            </article>
                         </div>
                         <h1>Projects</h1>
                         <div className="experience-row">
-                            <div className="experience-card">
+                            <article className="experience-card">
                                 <header className="experience-date">October 2025</header>
                                 <a
                                     href="https://github.com/aidenjt-04/aidentaylor-portfolio"
@@ -66,8 +66,8 @@ function Experience() {
                                     <li><span className="tag">Figma</span></li>
                                     <li><span className="tag">React Leaflet</span></li>
                                 </ul>
-                            </div>
-                            <div className="experience-card">
+                            </article>
+                            <article className="experience-card">
                                 <header className="experience-date">Spring 2025</header>
                                 <a
                                     href="https://github.com/aidenjt-04/XPerience"
@@ -90,13 +90,13 @@ function Experience() {
                                     <li><span className="tag">AWS</span></li>
                                     <li><span className="tag">Figma</span></li>
                                 </ul>
-                            </div>
+                            </article>
                         </div>
-                    </div>
-                    <div className="experience-right">
+                    </section>
+                    <section className="experience-right">
                         <div className="resume-container">
                             <h1 >Resume</h1>
-                            <div className="resume-wrapper">
+                            <figure className="resume-wrapper">
                                 <a
                                 href="https://drive.google.com/file/d/1dLf1gFgdsqfYe7JLYV9ng4nhgSOgJ4wo/view?usp=sharing"
                                 target="_blank"
@@ -119,9 +119,9 @@ function Experience() {
                                     </p>
                                 </object>
                                 </a>
-                            </div>
+                            </figure>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </main>
             <Footer />

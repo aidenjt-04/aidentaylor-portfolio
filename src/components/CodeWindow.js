@@ -19,20 +19,21 @@ function CodeWindow() {
                 <div className="circle green"></div>
             </div>
 
-            <div className="vscode-code-area">
+            <pre className="vscode-code-area">
                 {lines.map((line, idx) => (
-                <div
+                <code
                     key={idx}
                     className="typing"
                     style={{
                     animationDelay: `${line.delay}s`,
                     color: line.color,
+                    display: "block"
                     }}
                 >
                     {line.text}
-                </div>
+                </code>
                 ))}
-            </div>
+            </pre>
         </div>
     );
 }

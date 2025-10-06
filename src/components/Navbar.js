@@ -5,8 +5,8 @@ import { ReactComponent as Logo } from '../AT-Logo.svg';
 function Navbar() {
     return (
         <nav>
-            <Link to="/">
-                <Logo className="logo" />
+            <Link to="/" aria-label="Go to home page">
+                <Logo className="logo" aria-hidden="true" focusable="false" />
             </Link>
             <ul className="navbar-links">
                 <li><Link to="/About">About</Link></li>

@@ -10,22 +10,22 @@ function Home() {
             <Navbar />
             <main className="home-main-content">
                 <h1>AIDEN TAYLOR</h1>
-                <div className="divider"></div>
+                <hr className="divider" / >
                 <h2>Software Engineer</h2>
             </main>
-            <div class="arrow-container">
+            <div className="arrow-container" aria-hidden="true">
                 <i className="bx bx-chevron-down arrow"></i>
             </div>
-            <div className="about-me-container">
+            <section className="about-me-container">
                 <div className="about-me-text">
-                    <h1>A little bit about me...</h1>
+                    <h2>A little bit about me...</h2>
                     <p>Hi! I'm Aiden, a student at UC Irvine. I enjoy building web applications and exploring the diverse areas of software engineering, with a particular interest in computer networks and cybersecurity. My goal is to continue growing as an engineer and contribute to impactful, innovative projects.</p>
                     <Link to="/About"><button className="btn">Learn More About Me</button></Link>
                 </div>
-                <div className="about-me-portrait">
+                <figure className="about-me-portrait">
                     <img src={AidenTaylorHeadshot} alt="Photo of Aiden Taylor" className='photo' />
-                </div>
-            </div>
+                </figure>
+            </section>
             <Footer />
         </div>
     );

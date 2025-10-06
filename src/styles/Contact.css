@@ -26,6 +26,7 @@
 
 .info {
     flex: 1;
+    font-size: 2rem;
 }
 
 .user-inputs {
@@ -39,7 +40,7 @@
     margin-top: 2rem;
 }
 
-.user-inputs p {
+.user-inputs label {
     margin-bottom: 1.9rem;
     font-size: 1.3rem;
     font-weight: bold;
@@ -51,6 +52,7 @@
     width: 100%;
     padding: 1rem;
     margin-top: 0.6rem;
+    margin-bottom: 2rem;
     border: 1px solid white;
     border-radius: 12px;
     font-size: 1.1rem;

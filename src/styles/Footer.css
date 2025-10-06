@@ -71,6 +71,20 @@ footer {
     margin-bottom: 0.3rem;
 }
 
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* match previous margin-right and margin-bottom behavior */
+    list-style: none; /* remove bullets */
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     .footer-container {
         flex-direction: row;
