@@ -113,15 +113,10 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
-.experience-card a {
-    text-decoration: none;
-    color: var(--seasalt);
-}
+.experience-card a:link,
+.experience-card a:visited,
+.experience-card a:active,
 .experience-card a:hover {
-    text-decoration: none;
-    color: var(--seasalt);
-}
-.experience-card a:visted {
     text-decoration: none;
     color: var(--seasalt);
 }
